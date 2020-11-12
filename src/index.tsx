@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navigation from './Navigation';
 import {
   BrowserRouter, Route, Switch,
-
-
 } from "react-router-dom";
+import ChatBox from './ChatBox';
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -25,7 +24,9 @@ ReactDOM.render(
         <p>Home</p>
           </Route>          
           </Switch>
+
     </BrowserRouter>
+    <ChatBox></ChatBox>
   </React.StrictMode>,
   document.getElementById('root')
 );
