@@ -1,8 +1,9 @@
 import React from 'react';
 import { Widget, addResponseMessage, toggleWidget, isWidgetOpened, deleteMessages  } from 'react-chat-widget';
 import 'react-chat-widget/lib/styles.css';
-let address = process.env.dialogFlow || 'https://pf-chatbot.herokuapp.com/dialogflow-in';
+import avtr from './avtr.svg';
 
+let address = process.env.dialogFlow || 'https://pf-chatbot.herokuapp.com/dialogflow-in';
 
 export class ChatBox extends React.Component {
     
@@ -29,7 +30,6 @@ export class ChatBox extends React.Component {
           return res.text()
         })
         .then((jsonData) => {
-            this.openWidgetIfClose();
             addResponseMessage(jsonData);
         })
         .catch((err) => {
@@ -78,13 +78,16 @@ export class ChatBox extends React.Component {
         this.sendEventToBot('Welcome');
             
         }, 2000);
+
       }
 
     render() {
         return (
             <Widget 
+            profileAvatar={avtr}
             handleNewUserMessage={this.handleNewUserMessage}
             title="PATONZ"
+            fullScreenMode={false}
             subtitle="Your decently trained bot"/>
       
         )

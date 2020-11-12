@@ -12,17 +12,4 @@ code {
     monospace;
 }
 
-.navLink {
-  color: black;
-  text-decoration: none;
-  transition: all 0.2s;
-  margin-left: 15px;
 
-
-}
-
-.navLink:hover {
-  color: #00000055;
-  text-decoration: none;
-  
-}

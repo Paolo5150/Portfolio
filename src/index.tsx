@@ -7,26 +7,42 @@ import {
   BrowserRouter, Route, Switch,
 } from "react-router-dom";
 import ChatBox from './ChatBox';
+import Home from './Home';
+import Fun from './Fun';
+import { Parallax } from 'react-parallax';
+import home2 from './images/home2.jpg'
 
 
 ReactDOM.render(
   <React.StrictMode>
+
     <BrowserRouter>
-      <Navigation></Navigation>
+
+    <Parallax
+                bgImage={home2}
+                bgImageAlt="the cat"     
+                strength={5}>
+                <Navigation></Navigation>
+                <div style={{ height:'800px'}}>
+
+                </div>
+
+                </Parallax>
       <Switch>
         <Route path="/fun">
-          <p>Fun</p>
-          </Route>
+          <Fun></Fun>
+        </Route>
         <Route path="/">
-        <p>Home</p>
-          </Route>
+          <Home></Home>
+        </Route>
         <Route path="/home">
-        <p>Home</p>
-          </Route>          
-          </Switch>
-
+          <Home></Home>
+        </Route>          
+      </Switch>
+      
+      <ChatBox></ChatBox>
+W
     </BrowserRouter>
-    <ChatBox></ChatBox>
   </React.StrictMode>,
   document.getElementById('root')
 );
