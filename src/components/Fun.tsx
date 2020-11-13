@@ -1,21 +1,21 @@
 import React from 'react';
-import home from './images/home.jpg'
+import { Parallax } from 'react-parallax';
+import home2 from '../images/home2.jpg'
 
-import {Parallax} from 'react-parallax';
 
 
-export class Home extends React.Component {
+export class Fun extends React.Component {
 
  
     render() {
         return (
             <div >               
-
+                
                 <div style={{height:'500px'}}>
                     Write here
                 </div>
                 <Parallax
-                bgImage={home}
+                bgImage={home2}
                 bgImageAlt="the cat"     
                 strength={500}>
                 <div style={{ height:'800px'}}/>
@@ -25,4 +25,4 @@ export class Home extends React.Component {
     }
 }
 
-export default Home
+export default Fun

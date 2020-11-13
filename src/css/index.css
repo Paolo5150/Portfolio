@@ -12,4 +12,14 @@ code {
     monospace;
 }
 
+@font-face {
+  font-family: 'Historich';
+  src: local('Historich'), url('../fonts/h.ttf') format('truetype');
+}
+
+.content-section {
+  background-color: papayawhip;
+  font-family: Historich;
+}
+
 

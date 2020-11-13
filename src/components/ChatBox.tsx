@@ -3,7 +3,7 @@ import { Widget, addResponseMessage, toggleWidget, isWidgetOpened, deleteMessage
 import 'react-chat-widget/lib/styles.css';
 import avtr from './avtr.svg';
 
-let address = process.env.dialogFlow || 'https://pf-chatbot.herokuapp.com/dialogflow-in';
+let address = process.env.dialogFlow || 'https://pf-portfolio-backend.herokuapp.com/dialogflow-in';
 
 export class ChatBox extends React.Component {
     
@@ -86,7 +86,7 @@ export class ChatBox extends React.Component {
             <Widget 
             profileAvatar={avtr}
             handleNewUserMessage={this.handleNewUserMessage}
-            title="PATONZ"
+            title="Rob Ot"
             fullScreenMode={false}
             subtitle="Your decently trained bot"/>
       
