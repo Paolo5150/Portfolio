@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #eeeeeeee;
 }
 
 code {
@@ -17,9 +18,47 @@ code {
   src: local('Historich'), url('../fonts/h.ttf') format('truetype');
 }
 
-.content-section {
-  background-color: papayawhip;
-  font-family: Historich;
+@font-face {
+  font-family: 'free';
+  src: local('free'), url('../fonts/free.ttf') format('truetype');
 }
 
+.content-section {
+  background-color: #7a7a7a00;
+  font-family: Historich;
+  font-size: 5em;
+  color: 222222;
+}
+
+.content-section-v2 {
+  background-color: #111111ff;
+  font-family: Historich;
+  font-size: 5em;
+  color: #ffffff;
+}
+.rater {
+  display: flex;
+  flex-direction: row; 
+}
+
+.project-thumb-container:hover {
+  background-color: bisque;
+
+}
+
+.project-thumb :hover {
+  filter: blur(5px);
+  z-index: 10;
+  transition: all 0.5s;
+}
+
+.project-thumb-title {
+  font-family: free;
+  font-size: 4em;
+
+}
+
+footer {
+  height: 100px;
+}
 

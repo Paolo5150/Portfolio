@@ -31,6 +31,7 @@ export class ChatBox extends React.Component {
         })
         .then((jsonData) => {
             addResponseMessage(jsonData);
+            this.openWidgetIfClose()
         })
         .catch((err) => {
           console.error(err);
@@ -86,9 +87,9 @@ export class ChatBox extends React.Component {
             <Widget 
             profileAvatar={avtr}
             handleNewUserMessage={this.handleNewUserMessage}
-            title="Rob Ot"
+            title="Bot"
             fullScreenMode={false}
-            subtitle="Your decently trained bot"/>
+            subtitle="The perfect job interview substitute"/>
       
         )
     }
