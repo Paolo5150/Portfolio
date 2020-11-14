@@ -47,7 +47,7 @@ export class Home extends React.Component {
                             Hi, name's Paolo.
                             
                             </Col>
-                            <Col xs="12" lg="12" style={{textAlign: 'left', fontSize: '0.4em', fontFamily: 'free', marginTop: '50px',  marginBottom: '50px'}}>
+                            <Col xs="12" lg="12" style={{textAlign: 'left', fontSize: '0.4em', fontFamily: 'basic', marginTop: '50px',  marginBottom: '50px'}}>
                             I'm a coffee drinker who sits in front of a PC all day. <br/>
                             Oh, I also write code.<br/>
                             Please, talk to the chatbot to know more about me!
@@ -65,20 +65,20 @@ export class Home extends React.Component {
                     <Fun></Fun>
                 </div>
                 <Parallax
-                bgImage={home}
-                bgImageAlt="h1"     
-                strength={this.detectScreenSize()}>
-                <div style={{ height:'700px'}}/>
+                    bgImage={home}
+                    bgImageAlt="h1"     
+                    strength={this.detectScreenSize()}>
+                    <div style={{ height:'700px'}}/>
                 </Parallax>
                 <div ref={this.myContactsRef}>
-                <footer  style={{padding: '20px'}}>
+                <footer  style={{padding: '20px', backgroundColor: '#aabbbb'}}>
                 <Container >
                         <Row >
                             <Col xs="12" lg="6" style={{textAlign: 'center'}}>
-                            <a className="fa fa-copyright navLink" target="_blank">
-                                    <span style={{fontFamily: 'free'}}> 2020. Paolo Ferri.</span><br/>
-                                    <span style={{fontFamily: 'free'}}> paoloferri5150@gmail.com</span>
-                                </a>
+                            <p className="fa fa-copyright" >
+                                    <span style={{fontFamily: 'free', fontSize: '1.7em'}}> 2020. Paolo Ferri.</span><br/>
+                                    <span style={{fontFamily: 'basic', fontSize: '1.2em'}}> paoloferri5150@gmail.com</span>
+                                </p>
                             </Col>
                             <Col xs="12" lg="6" style={{textAlign: 'center'}}>
                                 <a className="btn btn-social-icon btn-linkedin navLink" href="https://www.linkedin.com/in/paolo-ferri-18aa3680/" target="_blank">

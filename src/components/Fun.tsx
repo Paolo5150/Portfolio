@@ -22,7 +22,7 @@ export class Fun extends React.Component {
                                 width={500}
                                 height={500}
                                 title="3D shooter - Uni project"
-                                description="<ul style='list-style-type:none; font-family: free; font-size: 1.5em'><li>C++</li> <li>OpenGL</li></ul>"
+                                description="<ul style='list-style-type:none;'><li>C++</li> <li>OpenGL</li></ul>"
                                 imgSrc={p1}
                                 bckndColor='#aabbbb'
                                 ></ProjectThumb>
@@ -33,7 +33,7 @@ export class Fun extends React.Component {
                                 height={500}
                                 bckndColor='#00000000'
                                 title="Virtual instruments trainer"
-                                description="<ul style='list-style-type:none; font-family: free; font-size: 1.5em'><li>Unity</li> <li>HTML/CSS</li><li>PhP</li></ul>"
+                                description="<ul style='list-style-type:none;'><li>Unity</li> <li>HTML/CSS</li><li>PhP</li></ul>"
                                 imgSrc={p2}></ProjectThumb>
                             </Col>
                             <Col xs="12" lg="12" style={{textAlign: 'left'}}>
@@ -42,7 +42,7 @@ export class Fun extends React.Component {
                                 height={200}
                                 bckndColor='#aabbbb'
                                 title="Chat bot!"
-                                description="<ul style='list-style-type:none; font-family: free; font-size: 1.5em'><li>React</li> <li>Node.js backend</li><li>Dialogflow</li></ul>"
+                                description="<ul style='list-style-type:none;'><li>React</li> <li>Node.js backend</li><li>Dialogflow</li></ul>"
                                 imgSrc={p3}></ProjectThumb>
                             </Col>
                         </Row>

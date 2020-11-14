@@ -36,9 +36,12 @@ export class ProjectThumb extends React.Component<Props, MyState> {
                                     <img src={this.props.imgSrc} width='100%'></img>
                                 </div>
                             </Col>
-                            <Col xs="12" lg="6" style={{textAlign: 'left'}}>
-                                <h1 className="project-thumb-title">{this.props.title}</h1>
-                                {htmlToReactParser.parse(this.props.description)}
+                            <Col xs="12" lg="6" style={{textAlign: 'left', fontFamily: 'basic'}}>
+                                <h1>{this.props.title}</h1>
+                                <div style={{fontSize: '1.2em'}}>
+                                    {htmlToReactParser.parse(this.props.description)}
+
+                                </div>
                             </Col>
                         </Row>
                     </Container>      

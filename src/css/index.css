@@ -19,6 +19,11 @@ code {
 }
 
 @font-face {
+  font-family: 'basic';
+  src: local('basic'), url('../fonts/basic.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'free';
   src: local('free'), url('../fonts/free.ttf') format('truetype');
 }
@@ -41,10 +46,6 @@ code {
   flex-direction: row; 
 }
 
-.project-thumb-container:hover {
-  background-color: bisque;
-
-}
 
 .project-thumb :hover {
   filter: blur(5px);
@@ -52,11 +53,6 @@ code {
   transition: all 0.5s;
 }
 
-.project-thumb-title {
-  font-family: free;
-  font-size: 4em;
-
-}
 
 footer {
   height: 100px;
