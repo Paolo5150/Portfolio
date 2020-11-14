@@ -7,7 +7,6 @@ import home2 from '../images/home2.jpg'
 import home from '../images/home.jpg'
 import Fun from './Fun';
 import Navigation from './Navigation';
-import { FaLinkedin } from "react-icons/fa";
 
 export class Home extends React.Component {
 
@@ -15,17 +14,7 @@ export class Home extends React.Component {
     private myContactsRef = createRef<HTMLDivElement>();
 
 
-    mySyle = {
-        height: '150px', 
-        width: '150px',
-        backgroundPosition: 'absolute'
-    }
 
-    sttle = {
-        height: '150px', 
-        width: '150px',
-    }
- 
     onNavigationClick = (tab:string):void =>{
         if(tab === 'fun')
             this.myFunRef.current?.scrollIntoView({behavior: 'smooth'});
@@ -34,6 +23,16 @@ export class Home extends React.Component {
             this.myContactsRef.current?.scrollIntoView({behavior: 'smooth'});
     }
 
+    detectScreenSize = ()=>{
+        if(window.innerWidth <= 760)
+        {
+            return 0;
+        }
+        else
+        {
+            return 500;
+        }
+    }
     render() {
         return (
             <div >  
@@ -59,7 +58,7 @@ export class Home extends React.Component {
                 <Parallax
                 bgImage={home2}
                 bgImageAlt="h1"     
-                strength={500}>
+                strength={this.detectScreenSize()}>
                 <div style={{ height:'700px'}}/>
                 </Parallax>
                 <div ref={this.myFunRef}>
@@ -68,7 +67,7 @@ export class Home extends React.Component {
                 <Parallax
                 bgImage={home}
                 bgImageAlt="h1"     
-                strength={500}>
+                strength={this.detectScreenSize()}>
                 <div style={{ height:'700px'}}/>
                 </Parallax>
                 <div ref={this.myContactsRef}>
