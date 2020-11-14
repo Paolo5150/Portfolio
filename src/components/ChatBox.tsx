@@ -2,6 +2,7 @@ import React from 'react';
 import { Widget, addResponseMessage, toggleWidget, isWidgetOpened, deleteMessages  } from 'react-chat-widget';
 import 'react-chat-widget/lib/styles.css';
 import avtr from './avtr.svg';
+import '../css/chatbot.css'
 
 let address = process.env.dialogFlow || 'https://pf-portfolio-backend.herokuapp.com/dialogflow-in';
 
