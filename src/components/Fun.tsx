@@ -94,7 +94,7 @@ export class Fun extends React.Component<IProps,State> {
                                 imgSrc={p1}
                                 description="A 3D FPS game developed from scratch in C++ and OpenGL. Lots of shader programming going on!"
                                 bckndColor='#aabbbb'
-                                techStack={[getIcon('c++','#aabbbb'),getIcon('opengl','#00000000')]}>
+                                techStack={[getIcon('c++','#aabbbb'),getIcon('opengl','#00000000'),getIcon('lua','#00000000')]}>
                                 </ProjectThumb>
 
                             </Col>
