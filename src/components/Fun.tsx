@@ -9,6 +9,9 @@ import ProjectThumb from './ProjectThumb';
 import {getIcon} from './TechIcons'
 import { Modal } from 'react-responsive-modal';
 import ReactPlayer from 'react-player'
+import Project_VirtualInsturments from './Project_VirtualInstruments'
+import Project_GameEngine from './Project_GameEngine'
+
 interface IProps {
 }
 
@@ -30,9 +33,9 @@ export class Fun extends React.Component<IProps,State> {
 
       //Custom Modal style, CSS styling wouldn't work
       modalStyle = {
-          backgroundColor: 'red',
-          width: window.innerWidth,
-          maxWidth: window.innerWidth
+          width: window.innerWidth * 0.9,
+          maxWidth: window.innerWidth,
+          borderRadius: '5px' 
       }
 
       //Update project id to be rendered in modal
@@ -43,15 +46,11 @@ export class Fun extends React.Component<IProps,State> {
     getPRojectComponent = ()=>{
         if(this.state.projectID === 'p1')
         {
-            return <div><ReactPlayer
-            url="https://www.youtube.com/watch?v=8aRFANi_duA&feature=youtu.be"
-        /></div>
+            return <Project_GameEngine></Project_GameEngine>
         }
         else if(this.state.projectID === 'p2')
         {
-            return <div><ReactPlayer
-                            url="https://www.youtube.com/watch?v=30whZemRvF8&feature=youtu.be"
-                        /></div>
+           return <Project_VirtualInsturments></Project_VirtualInsturments>
         }
     }
 
@@ -64,12 +63,13 @@ export class Fun extends React.Component<IProps,State> {
                 }}
                 center
                 open={this.state.open} onClose={() => this.closeModal(false)}>
-                    <h1>{this.state.projectID}</h1>
+               <Container fluid>
                     <div>
                          {
                              this.getPRojectComponent()
                          }
                     </div>
+                    </Container>
             </Modal>
                     
                  <Container fluid>
