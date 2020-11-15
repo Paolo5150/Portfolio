@@ -5,6 +5,28 @@ import reportWebVitals from './reportWebVitals';
 import ChatBox from './components/ChatBox';
 import Home from './components/Home';
 
+var http = require('http'); //importing http
+
+function startKeepAlive() {
+    setInterval(function() {
+        var options = {
+            host: 'https://pf-portfolio.herokuapp.com/',
+            port: 80,
+            path: '/'
+        };
+        http.get(options, function(res:any) {
+            res.on('data', function(chunk:any) {
+                try {
+                } catch (err) {
+                }
+            });
+        }).on('error', function(err:any) {
+        });
+    }, 20 * 60 * 1000); // load every 20 minutes
+}
+
+startKeepAlive();
+
 ReactDOM.render(
   <React.StrictMode>
 

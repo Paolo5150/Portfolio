@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player';
 import '../css/index.css';
 import {getIcon} from './TechIcons'
 
-export class Project_VirtualInstruments extends React.Component {
+export class ProjectVirtualInstruments extends React.Component {
 
     
 
@@ -41,4 +41,4 @@ export class Project_VirtualInstruments extends React.Component {
     }
 }
 
-export default Project_VirtualInstruments
+export default ProjectVirtualInstruments

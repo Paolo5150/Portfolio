@@ -8,8 +8,8 @@ import '../css/index.css'
 import ProjectThumb from './ProjectThumb';
 import {getIcon} from './TechIcons'
 import { Modal } from 'react-responsive-modal';
-import Project_VirtualInsturments from './Project_VirtualInstruments'
-import Project_GameEngine from './Project_GameEngine'
+import ProjectVirtualInstruments from './Project_VirtualInstruments'
+import ProjectGameEngine from './Project_GameEngine'
 
 interface IProps {
 }
@@ -50,12 +50,12 @@ export class Fun extends React.Component<IProps,State> {
     getPRojectComponent = ()=>{
         if(this.state.projectID === 'p1')
         {
-            return <Project_GameEngine></Project_GameEngine>
+            return <ProjectGameEngine></ProjectGameEngine>
         }
         else if(this.state.projectID === 'p2')
         {
-           return <Project_VirtualInsturments>
-               </Project_VirtualInsturments>
+           return <ProjectVirtualInstruments>
+               </ProjectVirtualInstruments>
         }
     }
 

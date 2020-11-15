@@ -5,7 +5,7 @@ import '../css/index.css';
 import {getIcon} from './TechIcons'
 
 
-export class Project_GameEngine extends React.Component {
+export class ProjectGameEngine extends React.Component {
 
 
     render() {
@@ -36,4 +36,4 @@ export class Project_GameEngine extends React.Component {
     }
 }
 
-export default Project_GameEngine
+export default ProjectGameEngine
