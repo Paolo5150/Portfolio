@@ -22,10 +22,6 @@ export class ProjectThumb extends React.Component<Props> {
         };
       }
 
-      getIcons = ()=> {
-
-   
-      }
 
       renderIcons = ()=>{
           return (
@@ -35,11 +31,9 @@ export class ProjectThumb extends React.Component<Props> {
                     <span>{icon}</span>
                 ) )
               }
-            
           </div>)
-       
-
       }
+
     render() {
         return (
             <div className="project-thumb-container" style={{padding: '50px', margin: '0',backgroundColor: this.props.bckndColor}} > 
@@ -57,7 +51,7 @@ export class ProjectThumb extends React.Component<Props> {
                                 }
                                 <p style={{fontSize: '1.3em', paddingTop: '20px', paddingBottom: '20px'}}>{this.props.description}</p>
                                 <button onClick={()=>{this.props.clickCallback(this.props.id)}}
-                                style={{position: 'absolute', bottom: 0}}>View</button>
+                                style={{position: 'absolute', bottom: 0, width: '80px', height: '30px'}}>View</button>
 
                             </Col>
                         </Row>

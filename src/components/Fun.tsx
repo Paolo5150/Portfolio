@@ -33,10 +33,12 @@ export class Fun extends React.Component<IProps,State> {
 
       //Custom Modal style, CSS styling wouldn't work
       modalStyle = {
+          backgroundColor: '#aabbbbff',
           width: window.innerWidth * 0.9,
           maxWidth: window.innerWidth,
           borderRadius: '5px' 
       }
+
 
       //Update project id to be rendered in modal
     projectClicked = (id:string)=>{
@@ -50,7 +52,8 @@ export class Fun extends React.Component<IProps,State> {
         }
         else if(this.state.projectID === 'p2')
         {
-           return <Project_VirtualInsturments></Project_VirtualInsturments>
+           return <Project_VirtualInsturments>
+               </Project_VirtualInsturments>
         }
     }
 
@@ -59,12 +62,13 @@ export class Fun extends React.Component<IProps,State> {
             <div style={{marginTop: '50px'}}>
 
             <Modal styles={{
-                modal: this.modalStyle
+                modal: this.modalStyle,                
                 }}
+
                 center
                 open={this.state.open} onClose={() => this.closeModal(false)}>
                <Container fluid>
-                    <div>
+                    <div style={{fontFamily: 'basic'}}>
                          {
                              this.getPRojectComponent()
                          }

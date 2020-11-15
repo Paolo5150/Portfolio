@@ -90,6 +90,9 @@ export class Home extends React.Component {
                                 <a className="btn btn-social-icon btn-linkedin navLink" href="https://www.linkedin.com/in/paolo-ferri-18aa3680/" target="_blank">
                                     <span className="fa fa-linkedin fa-lg"></span>
                                 </a>
+                                <a className="btn btn-social-icon btn-github navLink" href="https://github.com/Paolo5150" target="_blank">
+                                    <span className="fa fa-github fa-lg"></span>
+                                </a>
                             </Col>
                     </Row>
                     </Container>
