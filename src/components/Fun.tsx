@@ -13,13 +13,11 @@ export class Fun extends React.Component {
  
     render() {
         return (
-            <div style={{marginTop: '100px'}}>
+            <div style={{marginTop: '50px'}}>
                  <Container fluid>
-                <h1 style={{fontFamily: 'Historich', textAlign: 'center', marginBottom: '100px', fontSize: '4em'}} >SOME OF MY WORK</h1>
+                <h1 style={{fontFamily: 'Historich', textAlign: 'center', marginBottom: '50px', fontSize: '4em'}} >SOME OF MY WORK</h1>
                         <Row >
-                            <Col xs="12" lg="12" style={{textAlign: 'left'}}>
-        
-                            
+                            <Col xs="12" lg="12" style={{textAlign: 'left'}}>                          
                             
                                 <ProjectThumb
                                 width={500}
@@ -35,7 +33,7 @@ export class Fun extends React.Component {
                                 width={500}
                                 height={500}
                                 bckndColor='#00000000'
-                                title="Virtual instruments trainer"
+                                title="Virtual instruments trainer - Uni project"
                                 techStack={[
                                     getIcon('unity','#00000000'),
                                     getIcon('c#','#00000000'),
