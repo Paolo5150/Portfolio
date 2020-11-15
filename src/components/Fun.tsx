@@ -8,7 +8,7 @@ import '../css/index.css'
 import ProjectThumb from './ProjectThumb';
 import {getIcon} from './TechIcons'
 import { Modal } from 'react-responsive-modal';
-
+import ReactPlayer from 'react-player'
 interface IProps {
 }
 
@@ -43,11 +43,15 @@ export class Fun extends React.Component<IProps,State> {
     getPRojectComponent = ()=>{
         if(this.state.projectID === 'p1')
         {
-            return <div>P1</div>
+            return <div><ReactPlayer
+            url="https://www.youtube.com/watch?v=8aRFANi_duA&feature=youtu.be"
+        /></div>
         }
         else if(this.state.projectID === 'p2')
         {
-            return <div>P2</div>
+            return <div><ReactPlayer
+                            url="https://www.youtube.com/watch?v=30whZemRvF8&feature=youtu.be"
+                        /></div>
         }
     }
 
