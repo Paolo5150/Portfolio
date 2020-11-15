@@ -114,7 +114,8 @@ export class Fun extends React.Component<IProps,State> {
                                     getIcon('php','#00000000'),
                                     getIcon('html','#00000000'),
                                     getIcon('css','#00000000'),
-                                    getIcon('sql','#00000000') ]}
+                                    getIcon('sql','#00000000'),
+                                    getIcon('javascript','#00000000') ]}
                            
                                 imgSrc={p2}></ProjectThumb>
                             </Col>

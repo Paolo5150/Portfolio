@@ -29,6 +29,8 @@ export class Project_VirtualInstruments extends React.Component {
                            {getIcon('html','#00000000')}
                            {getIcon('css','#00000000')}
                            {getIcon('sql','#00000000')}
+                           {getIcon('javascript','#00000000')}
+
                            </h2>
                           
                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, nihil consectetur distinctio unde dolorem sit asperiores a fuga provident ipsam quibusdam dolor quis iusto porro numquam ab laborum ratione sunt.

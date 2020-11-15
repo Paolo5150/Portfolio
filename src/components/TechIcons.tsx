@@ -10,11 +10,7 @@ import css3 from '@iconify/icons-logos/css-3';
 import html5 from '@iconify/icons-logos/html-5';
 import mysqlIcon from '@iconify/icons-logos/mysql';
 import openglIcon from '@iconify/icons-logos/opengl';
-
-
-
-
-
+import jsIcon from '@iconify/icons-logos/javascript';
 
 export function getIcon(name:string, color:string):any {
 
@@ -78,5 +74,13 @@ export function getIcon(name:string, color:string):any {
                     <div>OpenGL</div>
                 </Popup>;
     }
+    else if(name === 'javascript') {
+        return <Popup 
+                on="hover"
+                trigger={<button style={{border: '0', cursor: 'default', backgroundColor: color}} ><Icon icon={jsIcon} width={width}/></button>  } position='right center'>
+                    <div>JavaSccipt</div>
+                </Popup>;
+    }
+    
 }
 
