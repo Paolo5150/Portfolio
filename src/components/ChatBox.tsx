@@ -92,10 +92,9 @@ export class ChatBox extends React.Component {
     render() {
         return (
             <Widget 
-            handleQuickButtonClicked={(args:any)=>{console.log('asdasdasd')}}
             profileAvatar={avtr}
             handleNewUserMessage={this.handleNewUserMessage}
-            title="Bot"
+            title="Bot-man"
             fullScreenMode={false}
             subtitle="The perfect job interview substitute"/>
       

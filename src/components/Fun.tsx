@@ -8,7 +8,6 @@ import '../css/index.css'
 import ProjectThumb from './ProjectThumb';
 import {getIcon} from './TechIcons'
 import { Modal } from 'react-responsive-modal';
-import ReactPlayer from 'react-player'
 import Project_VirtualInsturments from './Project_VirtualInstruments'
 import Project_GameEngine from './Project_GameEngine'
 
@@ -36,9 +35,12 @@ export class Fun extends React.Component<IProps,State> {
           backgroundColor: '#aabbbbff',
           width: window.innerWidth * 0.9,
           maxWidth: window.innerWidth,
-          borderRadius: '5px' 
+          borderRadius: '5px'
       }
 
+      overlayStyle = {
+        backgroundColor: '#222222ee'
+      }
 
       //Update project id to be rendered in modal
     projectClicked = (id:string)=>{
@@ -62,7 +64,8 @@ export class Fun extends React.Component<IProps,State> {
             <div style={{marginTop: '50px'}}>
 
             <Modal styles={{
-                modal: this.modalStyle,                
+                modal: this.modalStyle,    
+                overlay: this.overlayStyle            
                 }}
 
                 center

@@ -27,8 +27,9 @@ export class ProjectThumb extends React.Component<Props> {
           return (
           <div>
               {
-                this.props.techStack.map( (icon) =>(
-                    <span>{icon}</span>
+                this.props.techStack.map( (icon, index) =>(
+
+                    <span key={index}>{icon}</span>
                 ) )
               }
           </div>)
@@ -41,7 +42,7 @@ export class ProjectThumb extends React.Component<Props> {
                         <Row >
                             <Col xs="12" lg="6" style={{textAlign: 'left'}}>
                                 <div style={{width: this.props.width, maxWidth: '100%', margin: 'auto'}} onClick={()=>{console.log('asd')}}>
-                                    <img src={this.props.imgSrc} width='100%'></img>
+                                    <img src={this.props.imgSrc} width='100%' alt="Thumb"></img>
                                 </div>
                             </Col>
                             <Col xs="12" lg="6" style={{textAlign: 'left', fontFamily: 'basic'}}>
