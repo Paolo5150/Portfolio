@@ -8,21 +8,21 @@ import Home from './components/Home';
 var http = require('http'); //importing http
 
 function startKeepAlive() {
+    console.log('sending req')
+
     setInterval(function() {
-        var options = {
-            host: 'https://pf-portfolio.herokuapp.com/',
-            port: 80,
-            path: '/'
-        };
-        http.get(options, function(res:any) {
-            res.on('data', function(chunk:any) {
-                try {
-                } catch (err) {
-                }
-            });
-        }).on('error', function(err:any) {
+        fetch('https://pf-portfolio.herokuapp.com/', {
+            method: 'GET',
+        }).then((res) => { 
+          return res.text()
+        })
+        .then((jsonData) => {
+
+        })
+        .catch((err) => {
+          console.error(err);
         });
-    }, 20 * 60 * 1000); // load every 20 minutes
+    }, 60*20 * 1000); // load every 20 minutes
 }
 
 startKeepAlive();
