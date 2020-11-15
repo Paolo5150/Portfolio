@@ -8,12 +8,17 @@ import home from '../images/home.jpg'
 import Fun from './Fun';
 import Navigation from './Navigation';
 
+
+
 export class Home extends React.Component {
+
+   
 
     private myFunRef = createRef<HTMLDivElement>();
     private myContactsRef = createRef<HTMLDivElement>();
 
-
+   
+    
 
     onNavigationClick = (tab:string):void =>{
         if(tab === 'fun')
@@ -39,6 +44,7 @@ export class Home extends React.Component {
                 <Navigation
                 navClick={this.onNavigationClick}
                 ></Navigation>     
+           
   
                 <div className="content-section" style={{marginTop: '50px'}}>
                     <Container >
