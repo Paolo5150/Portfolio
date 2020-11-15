@@ -1,4 +1,18 @@
 .rcw-widget-container {
-    max-height: 70vh;
-
+    max-height: 80vh;
+    pointer-events: none;
 }
+
+.rcw-launcher {
+    pointer-events: all;
+}
+
+.rcw-close-button {
+    pointer-events: all;
+}
+
+.rcw-sender {
+    pointer-events: all;
+}
+
+

@@ -3,11 +3,13 @@ import { Widget, addResponseMessage, toggleWidget, isWidgetOpened, deleteMessage
 import 'react-chat-widget/lib/styles.css';
 import avtr from './avtr.svg';
 import '../css/chatbot.css'
+import ReactDOM from 'react-dom';
 
 let address = process.env.dialogFlow || 'https://pf-portfolio-backend.herokuapp.com/dialogflow-in';
 
 export class ChatBox extends React.Component {
-    
+
+
     openWidgetIfClose = ()=>{
         if(!isWidgetOpened()) {
             toggleWidget();
@@ -32,7 +34,8 @@ export class ChatBox extends React.Component {
         })
         .then((jsonData) => {
             addResponseMessage(jsonData);
-            this.openWidgetIfClose()
+            this.openWidgetIfClose()      
+
         })
         .catch((err) => {
           console.error(err);
@@ -72,7 +75,10 @@ export class ChatBox extends React.Component {
 
       };
 
+
+
     componentDidMount(){
+
         this.closeWidgetIfOpen();        
         deleteMessages(0);
         
@@ -86,6 +92,7 @@ export class ChatBox extends React.Component {
     render() {
         return (
             <Widget 
+            handleQuickButtonClicked={(args:any)=>{console.log('asdasdasd')}}
             profileAvatar={avtr}
             handleNewUserMessage={this.handleNewUserMessage}
             title="Bot"
