@@ -6,7 +6,6 @@ import ChatBox from './components/ChatBox';
 import Home from './components/Home';
 
 function startKeepAlive() {
-    console.log('sending req')
 
     setInterval(function() {
         fetch('https://pf-portfolio.herokuapp.com/', {

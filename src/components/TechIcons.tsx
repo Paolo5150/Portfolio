@@ -1,5 +1,5 @@
 import React from "react";
-import {Icon, InlineIcon} from '@iconify/react';
+import {Icon} from '@iconify/react';
 import cPlusplus from '@iconify/icons-logos/c-plusplus'
 import unityIcon from '@iconify/icons-logos/unity';
 import 'reactjs-popup/dist/index.css';

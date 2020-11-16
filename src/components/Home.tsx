@@ -87,10 +87,10 @@ export class Home extends React.Component {
                                 </p>
                             </Col>
                             <Col xs="8" lg="6" style={{textAlign: 'center'}}>
-                                <a className="btn btn-social-icon btn-linkedin navLink" href="https://www.linkedin.com/in/paolo-ferri-18aa3680/" target="_blank">
+                                <a className="btn btn-social-icon btn-linkedin navLink" href="https://www.linkedin.com/in/paolo-ferri-18aa3680/" target="_blank" rel="noreferrer">
                                     <span className="fa fa-linkedin fa-lg"></span>
                                 </a>
-                                <a className="btn btn-social-icon btn-github navLink" href="https://github.com/Paolo5150" target="_blank">
+                                <a className="btn btn-social-icon btn-github navLink" href="https://github.com/Paolo5150" target="_blank" rel="noreferrer">
                                     <span className="fa fa-github fa-lg"></span>
                                 </a>
                             </Col>
