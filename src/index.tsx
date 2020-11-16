@@ -5,14 +5,13 @@ import reportWebVitals from './reportWebVitals';
 import ChatBox from './components/ChatBox';
 import Home from './components/Home';
 
-var http = require('http'); //importing http
-
 function startKeepAlive() {
     console.log('sending req')
 
     setInterval(function() {
         fetch('https://pf-portfolio.herokuapp.com/', {
             method: 'GET',
+            mode: 'no-cors'
         }).then((res) => { 
           return res.text()
         })
@@ -22,7 +21,7 @@ function startKeepAlive() {
         .catch((err) => {
           console.error(err);
         });
-    }, 60*20 * 1000); // load every 20 minutes
+    }, 20 * 60 * 1000); // load every 20 minutes
 }
 
 startKeepAlive();
