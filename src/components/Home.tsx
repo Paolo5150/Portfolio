@@ -3,6 +3,7 @@ import React, {createRef} from 'react';
 import {Parallax} from 'react-parallax';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../css/index.css';
+import '../css/projects.css';
 import home2 from '../images/home2.jpg'
 import home from '../images/home.jpg'
 import Fun from './Fun';

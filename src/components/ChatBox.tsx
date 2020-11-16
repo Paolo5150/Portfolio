@@ -6,7 +6,25 @@ import '../css/chatbot.css'
 
 let address = process.env.dialogFlow || 'https://pf-portfolio-backend.herokuapp.com/dialogflow-in';
 
-export class ChatBox extends React.Component {
+interface IState {
+  botTitle:string,
+  botSubtitle: string
+}
+
+interface IProps {
+
+}
+
+export class ChatBox extends React.Component<IProps, IState> {
+
+  constructor(props:any)
+  {
+    super(props);
+    this.state = {
+      botTitle: 'Loading...',
+      botSubtitle: ''
+    }
+  }
 
 
     openWidgetIfClose = ()=>{
@@ -21,7 +39,7 @@ export class ChatBox extends React.Component {
         }
     }
 
-    sendReq = (req:object) =>{
+    sendReq = (req:object, onSuccess:()=>void) =>{
         fetch(address, {
             method: 'POST',
             headers: {
@@ -32,6 +50,7 @@ export class ChatBox extends React.Component {
           return res.text()
         })
         .then((jsonData) => {
+            onSuccess();
             addResponseMessage(jsonData);
             this.openWidgetIfClose()      
 
@@ -51,7 +70,13 @@ export class ChatBox extends React.Component {
               },
             },
           };
-          this.sendReq(req);       
+          this.sendReq(req, ()=>{
+            this.setState({
+              botTitle: 'Bot-Man',
+              botSubtitle: 'The perfect job interview substitute'
+            })
+
+          });       
     }
 
     sendMessageToBot = (message:string) => {
@@ -65,7 +90,7 @@ export class ChatBox extends React.Component {
             },
           };
 
-          this.sendReq(req); 
+          this.sendReq(req, ()=>{}); 
 
     }
 
@@ -93,9 +118,9 @@ export class ChatBox extends React.Component {
             <Widget 
             profileAvatar={avtr}
             handleNewUserMessage={this.handleNewUserMessage}
-            title="Bot-man"
+            title={this.state.botTitle}
             fullScreenMode={false}
-            subtitle="The perfect job interview substitute"/>
+            subtitle={this.state.botSubtitle}/>
       
         )
     }
