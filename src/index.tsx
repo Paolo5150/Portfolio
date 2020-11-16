@@ -8,19 +8,19 @@ import Home from './components/Home';
 function startKeepAlive() {
 
     setInterval(function() {
-        fetch('https://pf-portfolio.herokuapp.com/', {
-            method: 'GET',
-            mode: 'no-cors'
+        fetch('https://pf-portfolio-backend.herokuapp.com/checking-in', {
+            method: 'POST'
         }).then((res) => { 
           return res.text()
         })
         .then((jsonData) => {
+          console.log()
 
         })
         .catch((err) => {
           console.error(err);
         });
-    }, 20 * 60 * 1000); // load every 20 minutes
+    }, 15* 60 * 1000); // load every 20 minutes
 }
 
 startKeepAlive();
