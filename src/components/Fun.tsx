@@ -61,7 +61,7 @@ export class Fun extends React.Component<IProps,State> {
 
     render() {
         return (
-            <div style={{marginTop: '50px'}}>
+            <div style={{marginTop: '20px'}}>
 
             <Modal styles={{
                 modal: this.modalStyle,    
@@ -79,9 +79,9 @@ export class Fun extends React.Component<IProps,State> {
                     </Container>
             </Modal>
                     
-                 <Container fluid>
+                 <Container >
                  
-                <h1 style={{fontFamily: 'Historich', textAlign: 'center', marginBottom: '50px', fontSize: '4em'}} >SOME OF MY WORK</h1>
+                <h1 style={{fontFamily: 'Historich', textAlign: 'center', marginBottom: '50px', fontSize: '4em'}} >The fun part</h1>
                         <Row >
                             <Col xs="12" lg="12" style={{textAlign: 'left'}}>                          
                             
@@ -104,7 +104,7 @@ export class Fun extends React.Component<IProps,State> {
                                 clickCallback = {this.projectClicked}
                                 width={500}
                                 height={500}
-                                bckndColor='#00000000'
+                                bckndColor='#aabbbb'
                                 description="A simulation that aims to train veterinary students to recognize surgrical instruments. Developed for the medical school at university"
 
                                 title="Virtual instruments trainer - Uni project"

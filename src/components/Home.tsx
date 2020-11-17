@@ -8,6 +8,7 @@ import home2 from '../images/home2.jpg'
 import home from '../images/home.jpg'
 import Fun from './Fun';
 import Navigation from './Navigation';
+import bnd from '../images/bnd.jpg'
 
 
 
@@ -69,7 +70,14 @@ export class Home extends React.Component {
                 <div style={{ height:'700px'}}/>
                 </Parallax>
                 <div ref={this.myFunRef}>
-                    <Fun></Fun>
+                <Parallax
+                blur={10}
+                bgImage={bnd}
+                bgImageAlt="h1"     
+                strength={this.detectScreenSize()}>
+                                    <Fun></Fun>
+
+                </Parallax>
                 </div>
                 <Parallax
                     bgImage={home}

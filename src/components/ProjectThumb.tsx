@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../css/index.css'
 
@@ -37,12 +38,14 @@ export class ProjectThumb extends React.Component<Props> {
 
     render() {
         return (
-            <div className="project-thumb-container" style={{padding: '50px', margin: '0',backgroundColor: this.props.bckndColor}} > 
+            <ScrollAnimation    delay={5}
+            animateIn="slideInUp">
+            <div className="project-thumb-container" style={{padding: '50px', margin: '15px',backgroundColor: this.props.bckndColor, borderRadius: '80px'}} > 
                <Container fluid>
                         <Row >
                             <Col xs="12" lg="6" style={{textAlign: 'left'}}>
                                 <div style={{width: this.props.width, maxWidth: '100%', margin: 'auto'}} onClick={()=>{console.log('asd')}}>
-                                    <img src={this.props.imgSrc} width='100%' alt="Thumb"></img>
+                                    <img src={this.props.imgSrc} width='100%' alt="Thumb" style={{objectFit: 'contain'}}></img>
                                 </div>
                             </Col>
                             <Col xs="12" lg="6" style={{textAlign: 'left', fontFamily: 'basic'}}>
@@ -58,6 +61,7 @@ export class ProjectThumb extends React.Component<Props> {
                         </Row>
                     </Container>      
             </div>
+            </ScrollAnimation>
         )
     }
 }
