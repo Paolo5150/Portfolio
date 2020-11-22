@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import p1 from '../images/p1.png'
-import p2 from '../images/p2.png'
+import p1 from '../images/p1/p1.png'
+import p2 from '../images/p2/p2.png'
+import p3 from '../images/p3/p3_6.png'
 import 'react-responsive-modal/styles.css';
 import '../css/index.css'
 
@@ -10,6 +11,7 @@ import {getIcon} from './TechIcons'
 import { Modal } from 'react-responsive-modal';
 import ProjectVirtualInstruments from './Project_VirtualInstruments'
 import ProjectGameEngine from './Project_GameEngine'
+import ProjectStocktaking from './Project_Stocktake'
 
 interface IProps {
 }
@@ -56,6 +58,11 @@ export class Fun extends React.Component<IProps,State> {
         {
            return <ProjectVirtualInstruments>
                </ProjectVirtualInstruments>
+        }
+        else if(this.state.projectID === 'p3')
+        {
+           return <ProjectStocktaking>
+               </ProjectStocktaking>
         }
     }
 
@@ -118,6 +125,22 @@ export class Fun extends React.Component<IProps,State> {
                                     getIcon('javascript','#00000000') ]}
                            
                                 imgSrc={p2}></ProjectThumb>
+                            </Col>
+                            <Col xs="12" lg="12" style={{textAlign: 'left'}}>
+                                <ProjectThumb 
+                                id="p3"
+                                clickCallback = {this.projectClicked}
+                                width={150}
+                                height={150}
+                                bckndColor='#aabbbb'
+                                description="A simple stocktaking application"
+
+                                title="Stocktaking App"
+                                techStack={[
+                                    getIcon('java','#00000000'),
+                                    getIcon('android','#00000000'),
+                                    getIcon('sql','#00000000')  ]}                           
+                                imgSrc={p3}></ProjectThumb>
                             </Col>
          
                         </Row>

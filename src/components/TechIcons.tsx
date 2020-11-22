@@ -12,6 +12,8 @@ import mysqlIcon from '@iconify/icons-logos/mysql';
 import openglIcon from '@iconify/icons-logos/opengl';
 import jsIcon from '@iconify/icons-logos/javascript';
 import lua from '@iconify/icons-logos/lua';
+import java from '@iconify/icons-logos/java';
+import android from '@iconify/icons-logos/android-icon';
 
 export function getIcon(name:string, color:string):any {
 
@@ -87,6 +89,20 @@ export function getIcon(name:string, color:string):any {
                 on="hover"
                 trigger={<button style={{border: '0', cursor: 'default', backgroundColor: color}} ><Icon icon={lua} width={width}/></button>  } position='right center'>
                     <div>Lua</div>
+                </Popup>;
+    }
+    else if(name === 'java') {
+        return <Popup 
+                on="hover"
+                trigger={<button style={{border: '0', cursor: 'default', backgroundColor: color}} ><Icon icon={java} width={width}/></button>  } position='right center'>
+                    <div>Java</div>
+                </Popup>;
+    }
+    else if(name === 'android') {
+        return <Popup 
+                on="hover"
+                trigger={<button style={{border: '0', cursor: 'default', backgroundColor: color}} ><Icon icon={android} width={width}/></button>  } position='right center'>
+                    <div>Android</div>
                 </Popup>;
     }
     
