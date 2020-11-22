@@ -5,25 +5,6 @@ import reportWebVitals from './reportWebVitals';
 import ChatBox from './components/ChatBox';
 import Home from './components/Home';
 
-function startKeepAlive() {
-
-    setInterval(function() {
-        fetch('https://pf-portfolio-backend.herokuapp.com/checking-in', {
-            method: 'POST'
-        }).then((res) => { 
-          return res.text()
-        })
-        .then((jsonData) => {
-          console.log()
-
-        })
-        .catch((err) => {
-          console.error(err);
-        });
-    }, 15* 60 * 1000); // load every 20 minutes
-}
-
-startKeepAlive();
 
 ReactDOM.render(
   <React.StrictMode>
