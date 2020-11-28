@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import p1 from '../images/p1/p1.png'
 import p2 from '../images/p2/p2.png'
 import p3 from '../images/p3/p3_6.png'
+import p4 from '../images/p4/p4_2.png'
 import 'react-responsive-modal/styles.css';
 import '../css/index.css'
 
@@ -11,6 +12,7 @@ import {getIcon} from './TechIcons'
 import { Modal } from 'react-responsive-modal';
 import ProjectVirtualInstruments from './Project_VirtualInstruments'
 import ProjectGameEngine from './Project_GameEngine'
+import ProjectAndroidOpenGL from './Project_AndroidOpenGL'
 import ProjectStocktaking from './Project_Stocktake'
 
 interface IProps {
@@ -63,6 +65,11 @@ export class Fun extends React.Component<IProps,State> {
         {
            return <ProjectStocktaking>
                </ProjectStocktaking>
+        }
+        else if(this.state.projectID === 'p4')
+        {
+           return <ProjectAndroidOpenGL>
+               </ProjectAndroidOpenGL>
         }
     }
 
@@ -141,6 +148,22 @@ export class Fun extends React.Component<IProps,State> {
                                     getIcon('android','#00000000'),
                                     getIcon('sql','#00000000')  ]}                           
                                 imgSrc={p3}></ProjectThumb>
+                            </Col>
+                            <Col xs="12" lg="12" style={{textAlign: 'left'}}>
+                                <ProjectThumb 
+                                id="p4"
+                                clickCallback = {this.projectClicked}
+                                width={500}
+                                height={500}
+                                bckndColor='#aabbbb'
+                                description="Small personal project, I wanted to experience creating a simple 3D renderer in Java, on Android."
+
+                                title="OpenGL renderer"
+                                techStack={[
+                                    getIcon('java','#00000000'),
+                                    getIcon('android','#00000000'),
+                                    getIcon('opengl','#00000000')]}                           
+                                imgSrc={p4}></ProjectThumb>
                             </Col>
          
                         </Row>

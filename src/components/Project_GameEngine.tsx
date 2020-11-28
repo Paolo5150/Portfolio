@@ -13,7 +13,7 @@ export class ProjectGameEngine extends React.Component {
     render() {
         return (
                 <div>
-                    <h1>3D Game Engine</h1>
+                    <h1 className="project-modal-title">3D Game Engine</h1>
 
                    <Row>
                        <Col lg="6" xs="12">

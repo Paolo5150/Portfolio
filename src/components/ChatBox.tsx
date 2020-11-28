@@ -4,11 +4,14 @@ import 'react-chat-widget/lib/styles.css';
 import avtr from './avtr.svg';
 import '../css/chatbot.css'
 
+let baseAddress = 'https://pf-portfolio-backend.herokuapp.com';
 let address = process.env.dialogFlow || 'https://pf-portfolio-backend.herokuapp.com/dialogflow-in';
 
 interface IState {
   botTitle:string,
-  botSubtitle: string
+  botSubtitle: string,
+  isPaoloAvailable:boolean,
+  wasPaoloAvailable:boolean
 }
 
 interface IProps {
@@ -22,7 +25,9 @@ export class ChatBox extends React.Component<IProps, IState> {
     super(props);
     this.state = {
       botTitle: 'Loading...',
-      botSubtitle: ''
+      botSubtitle: '',
+      isPaoloAvailable:false,
+      wasPaoloAvailable:false
     }
   }
 
@@ -102,6 +107,7 @@ export class ChatBox extends React.Component<IProps, IState> {
 
 
     componentDidMount(){
+
 
         this.closeWidgetIfOpen();        
         deleteMessages(0);

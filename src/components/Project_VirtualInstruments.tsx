@@ -13,7 +13,7 @@ export class ProjectVirtualInstruments extends React.Component {
     render() {
         return (
                 <div>
-                    <h1>Virtual Instruments Trainer</h1>
+                    <h1 className="project-modal-title">Virtual Instruments Trainer</h1>
 
                    <Row>
                        <Col lg="6" xs="12">

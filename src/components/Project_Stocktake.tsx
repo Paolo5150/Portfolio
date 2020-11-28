@@ -60,7 +60,7 @@ export class ProjectStocktake extends React.Component {
     render() {
         return (
                 <div>
-                    <h1>Simple Stocktaking App</h1>
+                    <h1 className="project-modal-title">Simple Stocktaking App</h1>
 
                    <Row>
                        <Col lg="6" xs="12">
