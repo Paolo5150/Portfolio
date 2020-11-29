@@ -97,7 +97,7 @@ export class Fun extends React.Component<IProps,State> {
                  
                 <h1 style={{fontFamily: 'Historich', textAlign: 'center', marginBottom: '50px', fontSize: '4em'}} >The fun part</h1>
                         <Row >
-                            <Col xs="12" lg="12" style={{textAlign: 'left'}}>                          
+                            <Col xs="12" lg="6" style={{textAlign: 'left'}}>                          
                             
                                 <ProjectThumb
                                 id="p1"
@@ -112,7 +112,7 @@ export class Fun extends React.Component<IProps,State> {
                                 </ProjectThumb>
 
                             </Col>
-                            <Col xs="12" lg="12" style={{textAlign: 'left'}}>
+                            <Col xs="12" lg="6" style={{textAlign: 'left'}}>
                                 <ProjectThumb 
                                 id="p2"
                                 clickCallback = {this.projectClicked}
@@ -133,14 +133,14 @@ export class Fun extends React.Component<IProps,State> {
                            
                                 imgSrc={p2}></ProjectThumb>
                             </Col>
-                            <Col xs="12" lg="12" style={{textAlign: 'left'}}>
+                            <Col xs="12" lg="6" style={{textAlign: 'left'}}>
                                 <ProjectThumb 
                                 id="p3"
                                 clickCallback = {this.projectClicked}
-                                width={150}
+                                width={130}
                                 height={150}
                                 bckndColor='#aabbbb'
-                                description="A simple stocktaking application"
+                                description="A simple stocktaking application, developed for the restaurant I was working at a while ago."
 
                                 title="Stocktaking App"
                                 techStack={[
@@ -149,7 +149,7 @@ export class Fun extends React.Component<IProps,State> {
                                     getIcon('sql','#00000000')  ]}                           
                                 imgSrc={p3}></ProjectThumb>
                             </Col>
-                            <Col xs="12" lg="12" style={{textAlign: 'left'}}>
+                            <Col xs="12" lg="6" style={{textAlign: 'left'}}>
                                 <ProjectThumb 
                                 id="p4"
                                 clickCallback = {this.projectClicked}

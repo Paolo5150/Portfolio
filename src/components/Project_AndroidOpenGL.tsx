@@ -23,6 +23,10 @@ export class ProjectAndroidOpenGL extends React.Component {
             thumbnail: p2
         },
         {
+            original: p3,
+            thumbnail: p3
+        },
+        {
             original: p4,
             thumbnail: p4
         },

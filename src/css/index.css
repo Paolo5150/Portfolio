@@ -46,6 +46,14 @@ code {
   flex-direction: row; 
 }
 
+.project-thumb-container {
+  background-color: #aabbbb22;
+  transition: all 1s
+}
+
+.project-thumb-container:hover {
+  background-color: #aabbbbaa
+}
 
 .project-thumb :hover {
   filter: blur(5px);

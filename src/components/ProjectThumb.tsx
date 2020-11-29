@@ -40,22 +40,24 @@ export class ProjectThumb extends React.Component<Props> {
         return (
             <ScrollAnimation    delay={5}
             animateIn="slideInUp">
-            <div className="project-thumb-container" style={{padding: '50px', margin: '15px',backgroundColor: this.props.bckndColor, borderRadius: '80px'}} > 
+            <div className="project-thumb-container" style={{padding: '50px', margin: '15px', borderRadius: '20px'}} > 
                <Container fluid>
                         <Row >
-                            <Col xs="12" lg="6" style={{textAlign: 'left'}}>
-                                <div style={{width: this.props.width, maxWidth: '100%', margin: 'auto'}} onClick={()=>{console.log('asd')}}>
+                            <Col xs="12" lg="12" style={{textAlign: 'left'}}>
+                                <div style={{width: this.props.width, maxWidth: '100%', margin: 'auto'}} >
                                     <img src={this.props.imgSrc} width='100%' alt="Thumb" style={{objectFit: 'contain'}}></img>
                                 </div>
                             </Col>
-                            <Col xs="12" lg="6" style={{textAlign: 'left', fontFamily: 'basic'}}>
-                                <h1>{this.props.title}</h1>
+                            <Col xs="12" lg="12" style={{textAlign: 'left', fontFamily: 'basic'}}>
+                                <h2 style={{textAlign: 'center', marginTop: '20px', marginBottom: '20px'}}>{this.props.title}</h2>
+                                <div style={{margin: 'auto', textAlign: 'center'}}>
                                 {
                                     this.renderIcons()
                                 }
-                                <p style={{fontSize: '1.3em', paddingTop: '20px', paddingBottom: '20px'}}>{this.props.description}</p>
-                                <button onClick={()=>{this.props.clickCallback(this.props.id)}}
-                                style={{position: 'absolute', bottom: 0, width: '80px', height: '30px'}}>View</button>
+                                </div>
+                                <p style={{fontSize: '1.3em', paddingTop: '20px', paddingBottom: '20px', marginBottom: '40px'}}>{this.props.description}</p>
+                                <button  onClick={()=>{this.props.clickCallback(this.props.id)}}
+                                    style={{position: 'absolute', bottom: 0, width: '80px', height: '30px'}}>View</button>
 
                             </Col>
                         </Row>
