@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #eeeeeeee;
+  background-color: #00000005;
 }
 
 code {
@@ -47,12 +47,12 @@ code {
 }
 
 .project-thumb-container {
-  background-color: #aabbbb22;
-  transition: all 1s
+  background-color: #aaabbb22;
+  transition: all 0.5s
 }
 
 .project-thumb-container:hover {
-  background-color: #aabbbbaa
+  background-color: #aaabbbaa
 }
 
 .project-thumb :hover {
@@ -76,3 +76,13 @@ footer {
   left: 0;
 }
 
+
+@media screen and (max-width: 992px){
+
+
+  .project-thumb-container {
+    background-color: #aaabbbaa
+
+
+    }
+}

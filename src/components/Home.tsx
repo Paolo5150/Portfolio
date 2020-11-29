@@ -70,14 +70,8 @@ export class Home extends React.Component {
                 <div style={{ height:'700px'}}/>
                 </Parallax>
                 <div ref={this.myFunRef}>
-                <Parallax
-                blur={10}
-                bgImage={bnd}
-                bgImageAlt="h1"     
-                strength={this.detectScreenSize()}>
-                                    <Fun></Fun>
+                <Fun></Fun>
 
-                </Parallax>
                 </div>
                 <Parallax
                     bgImage={home}

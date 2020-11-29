@@ -107,8 +107,8 @@ export class Fun extends React.Component<IProps,State> {
                                 title="3D shooter - Uni project"
                                 imgSrc={p1}
                                 description="A 3D FPS game developed from scratch in C++ and OpenGL. Lots of shader programming going on!"
-                                bckndColor='#aabbbb'
-                                techStack={[getIcon('c++','#aabbbb'),getIcon('opengl','#00000000'),getIcon('lua','#00000000')]}>
+                                bckndColor='#aaabbb22'
+                                techStack={[getIcon('c++','#00000000'),getIcon('opengl','#00000000'),getIcon('lua','#00000000')]}>
                                 </ProjectThumb>
 
                             </Col>
@@ -139,7 +139,7 @@ export class Fun extends React.Component<IProps,State> {
                                 clickCallback = {this.projectClicked}
                                 width={130}
                                 height={150}
-                                bckndColor='#aabbbb'
+                                bckndColor='#aaabbb'
                                 description="A simple stocktaking application, developed for the restaurant I was working at a while ago."
 
                                 title="Stocktaking App"
