@@ -17,7 +17,7 @@ import android from '@iconify/icons-logos/android-icon';
 
 export function getIcon(name:string, color:string):any {
 
-    let width = '35px';
+    let width = '25px';
 
     if(name === "c++")
     {
@@ -73,7 +73,7 @@ export function getIcon(name:string, color:string):any {
     else if(name === 'opengl') {
         return <Popup 
                 on="hover"
-                trigger={<button style={{border: '0', cursor: 'default', backgroundColor: color}} ><Icon icon={openglIcon} width='60px'/></button>  } position='right center'>
+                trigger={<button style={{border: '0', cursor: 'default', backgroundColor: color}} ><Icon icon={openglIcon} width='40px'/></button>  } position='right center'>
                     <div>OpenGL</div>
                 </Popup>;
     }

@@ -83,13 +83,13 @@ export class Home extends React.Component {
                 <footer  style={{padding: '20px', backgroundColor: '#aabbbb'}}>
                 <Container >
                         <Row >
-                            <Col xs="4" lg="6" style={{textAlign: 'center'}}>
+                            <Col xs="12" lg="6" style={{textAlign: 'center'}}>
                             <p className="fa fa-copyright" >
                                     <span style={{fontFamily: 'free', fontSize: '1.7em'}}> 2020. Paolo Ferri.</span><br/>
                                     <span style={{fontFamily: 'basic', fontSize: '1.2em'}}> paoloferri5150@gmail.com</span>
                                 </p>
                             </Col>
-                            <Col xs="8" lg="6" style={{textAlign: 'center'}}>
+                            <Col xs="12" lg="6" style={{textAlign: 'center'}}>
                                 <a className="btn btn-social-icon btn-linkedin navLink" href="https://www.linkedin.com/in/paolo-ferri-18aa3680/" target="_blank" rel="noreferrer">
                                     <span className="fa fa-linkedin fa-lg"></span>
                                 </a>

@@ -158,7 +158,7 @@ export class Fun extends React.Component<IProps,State> {
                                 bckndColor='#aabbbb'
                                 description="Small personal project, I wanted to experience creating a simple 3D renderer in Java, on Android."
 
-                                title="OpenGL renderer"
+                                title="OpenGL Renderer"
                                 techStack={[
                                     getIcon('java','#00000000'),
                                     getIcon('android','#00000000'),

@@ -49,7 +49,7 @@ export class ProjectThumb extends React.Component<Props> {
                                 </div>
                             </Col>
                             <Col xs="12" lg="12" style={{textAlign: 'left', fontFamily: 'basic'}}>
-                                <h2 style={{textAlign: 'center', marginTop: '20px', marginBottom: '20px'}}>{this.props.title}</h2>
+                                <h3 style={{textAlign: 'center', marginTop: '20px', marginBottom: '20px', fontWeight: 'bold'}}>{this.props.title}</h3>
                                 <div style={{margin: 'auto', textAlign: 'center'}}>
                                 {
                                     this.renderIcons()
