@@ -108,6 +108,7 @@ export class Fun extends React.Component<IProps,State> {
                                 imgSrc={p1}
                                 description="A 3D FPS game developed from scratch in C++ and OpenGL. Lots of shader programming going on!"
                                 bckndColor='#aaabbb22'
+                                slideIn="slideInLeft"
                                 techStack={[getIcon('c++','#00000000'),getIcon('opengl','#00000000'),getIcon('lua','#00000000')]}>
                                 </ProjectThumb>
 
@@ -120,8 +121,8 @@ export class Fun extends React.Component<IProps,State> {
                                 height={500}
                                 bckndColor='#aabbbb'
                                 description="A simulation that aims to train veterinary students to recognize surgrical instruments. Developed for the medical school at university"
-
                                 title="Virtual instruments trainer - Uni project"
+                                slideIn="slideInRight"
                                 techStack={[
                                     getIcon('unity','#00000000'),
                                     getIcon('c#','#00000000'),
@@ -141,8 +142,8 @@ export class Fun extends React.Component<IProps,State> {
                                 height={150}
                                 bckndColor='#aaabbb'
                                 description="A simple stocktaking application, developed for the restaurant I was working at a while ago."
-
                                 title="Stocktaking App"
+                                slideIn="slideInLeft"
                                 techStack={[
                                     getIcon('java','#00000000'),
                                     getIcon('android','#00000000'),
@@ -157,8 +158,8 @@ export class Fun extends React.Component<IProps,State> {
                                 height={500}
                                 bckndColor='#aabbbb'
                                 description="Small personal project, I wanted to experience creating a simple 3D renderer in Java, on Android."
-
                                 title="OpenGL Renderer"
+                                slideIn="slideInRight"
                                 techStack={[
                                     getIcon('java','#00000000'),
                                     getIcon('android','#00000000'),

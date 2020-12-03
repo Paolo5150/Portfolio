@@ -3,8 +3,9 @@ import { Row, Col } from 'react-bootstrap';
 import '../css/index.css';
 import '../css/projects.css'
 import ImageGallery from 'react-image-gallery';
-import {getIcon} from './TechIcons'
 import "react-image-gallery/styles/css/image-gallery.css";
+
+import {getIcon} from './TechIcons'
 
 import p1 from '../images/p3/p3_1.png'
 import p2 from '../images/p3/p3_2.png'
