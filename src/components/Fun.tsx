@@ -4,8 +4,10 @@ import p1 from '../images/p1/p1.png'
 import p2 from '../images/p2/p2.png'
 import p3 from '../images/p3/p3_6.png'
 import p4 from '../images/p4/p4_2.png'
+import p5 from '../images/p5/p5_2.png'
 import 'react-responsive-modal/styles.css';
 import '../css/index.css'
+
 
 import ProjectThumb from './ProjectThumb';
 import {getIcon} from './TechIcons'
@@ -14,6 +16,7 @@ import ProjectVirtualInstruments from './Project_VirtualInstruments'
 import ProjectGameEngine from './Project_GameEngine'
 import ProjectAndroidOpenGL from './Project_AndroidOpenGL'
 import ProjectStocktaking from './Project_Stocktake'
+import ProjectWebGL from './Project_WebGL'
 
 interface IProps {
 }
@@ -70,6 +73,11 @@ export class Fun extends React.Component<IProps,State> {
         {
            return <ProjectAndroidOpenGL>
                </ProjectAndroidOpenGL>
+        }
+        else if(this.state.projectID === 'p5')
+        {
+           return <ProjectWebGL>
+               </ProjectWebGL>
         }
     }
 
@@ -150,7 +158,8 @@ export class Fun extends React.Component<IProps,State> {
                                     getIcon('sql','#00000000')  ]}                           
                                 imgSrc={p3}></ProjectThumb>
                             </Col>
-                            <Col xs="12" lg="6" style={{textAlign: 'left'}}>
+                            {/*
+                                <Col xs="12" lg="6" style={{textAlign: 'left'}}>
                                 <ProjectThumb 
                                 id="p4"
                                 clickCallback = {this.projectClicked}
@@ -165,6 +174,24 @@ export class Fun extends React.Component<IProps,State> {
                                     getIcon('android','#00000000'),
                                     getIcon('opengl','#00000000')]}                           
                                 imgSrc={p4}></ProjectThumb>
+                            </Col>*/
+                            }
+                     
+                            <Col xs="12" lg="6" style={{textAlign: 'left'}}>
+                                <ProjectThumb 
+                                id="p5"
+                                clickCallback = {this.projectClicked}
+                                width={500}
+                                height={500}
+                                bckndColor='#aabbbb'
+                                description="Graphics, passion project, using WebGl, experimenting with phisically based rendering and IBL (image based lighting)."
+                                title="WebGL PBR Renderer"
+                                slideIn="slideInRight"
+                                techStack={[
+                                    getIcon('javascript','#00000000'),
+                                    getIcon('opengl','#00000000'),
+                                    getIcon('html','#00000000')]}                           
+                                imgSrc={p5}></ProjectThumb>
                             </Col>
          
                         </Row>
