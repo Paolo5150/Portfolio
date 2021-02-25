@@ -81,7 +81,7 @@ export function getIcon(name:string, color:string):any {
         return <Popup 
                 on="hover"
                 trigger={<button style={{border: '0', cursor: 'default', backgroundColor: color}} ><Icon icon={jsIcon} width={width}/></button>  } position='right center'>
-                    <div>JavaSccipt</div>
+                    <div>JavaScript</div>
                 </Popup>;
     }
     else if(name === 'lua') {
